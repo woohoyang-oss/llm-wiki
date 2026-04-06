@@ -1,0 +1,1 @@
+Akaxa.space stack: Hono + PostgreSQL + Redis + Next.js + Three.js. Deployed on EC2 t3.small with nginx reverse proxy. MCP server for Claude, REST API for ChatGPT. AES-256-GCM encrypted memory vault with cross-AI auth via star names.

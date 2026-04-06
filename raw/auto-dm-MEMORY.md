@@ -1,0 +1,1 @@
+- [GSD-2 Methodology](reference_gsd2_methodology.md) — GSD-2 자율 에이전트 개발 방법론: Milestone→Slice→Task 계층, 5단계 파이프라인, auto mode, 컨텍스트 격리
