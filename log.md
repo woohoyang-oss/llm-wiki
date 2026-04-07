@@ -4,6 +4,29 @@ title: Wiki Log
 
 # Log
 
+## [2026-04-07] fix | eywa MCP 74개 도구 파이프라인 검증 완료
+
+### 전체 검증 결과
+- 핵심 13개: 전부 정상
+- 나머지 61개: 48 정상, 7 SQL버그 수정, 6 EC2전용(정상실패)
+
+### SQL 포맷팅 버그 수정 (7개)
+- `get_unanswered_inquiries` — LIMIT %s 누락
+- `get_as_diagnosis` — LIMIT %s 누락
+- `get_as_products` — LIMIT %s 누락
+- `get_bizmoney` — WHERE account=%s 누락 + DAILY_AVG_SPEND account 필터 추가
+- `get_margin_analysis` — LIMIT %s 누락
+- `get_problem_products` — LIMIT %s 누락
+- `get_top_keywords` — LIMIT %s 누락
+
+### product_cost_by_keyword 실거래가 매칭
+- 문제: actual_price(ERP 정가)로 마진 계산 → 허수 (EX75: 52.1%)
+- 수정: naver_smartstore_orders 90일 실거래가 매칭 → 실제 마진 (EX75: 19.9%)
+- 새 필드: avg_real_price, real_order_count
+- sql/cost_queries.py + services/cost_service.py 수정
+
+---
+
 ## [2026-04-07] feat | ERP 전 채널 매출 전환 + 신규 도구 2개
 
 ### ERP 전환 (3개 도구)
