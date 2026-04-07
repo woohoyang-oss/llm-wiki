@@ -1,2 +1,6 @@
 .DS_Store
 .obsidian/
+
+# raw/ 소스는 시크릿 포함 가능 — 로컬/서버만 보관
+raw/
+wooho-studio/

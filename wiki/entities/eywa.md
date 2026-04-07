@@ -64,6 +64,10 @@ Tester(Playwright, Jest, pytest), Reviewer(ESLint, Ruff, semgrep), DevOps(Docker
 - CLI-first 셋업 시스템(setup.sh + Claude CLI 인터랙티브) 추가
 - 전체 UI 영문화 완료
 
+## 분리 프로젝트
+
+태스크 큐 기능이 **eywa-queue**로 독립 분리되었다. SQLite 기반 태스크 오케스트레이션, DAG 의존성 관리, 리소스 락 등의 기능을 전담한다. 상세는 [[eywa-queue]]를 참조.
+
 ## 관련 시스템
 
 - [[claude-team]] - Eywa의 원형이 된 실전 운영 시스템
