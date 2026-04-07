@@ -5,15 +5,16 @@ updated: 2026-04-06
 
 # Wiki Index
 
-위키의 모든 페이지를 카탈로그합니다. 347개 소스에서 67개 위키 페이지 생성.
+위키의 모든 페이지를 카탈로그합니다. 347개 소스에서 69개 위키 페이지 생성.
 
-## Entities (23)
+## Entities (25)
 
 프로젝트/시스템별 엔티티 페이지.
 
 - [[auto-email]] — AI 이메일 자동응답 시스템 (mail.tbe.kr)
 - [[claude-team]] — 멀티머신 Claude 에이전트 팀 (Slack 기반)
 - [[eywa]] — Claude Team 오케스트레이션 플랫폼
+- [[eywa-dev-guide]] — eywa MCP 개발자 가이드 (통합 서버, WikiIndex, Streamable HTTP)
 - [[eywa-queue]] — Eywa Queue 독립 태스크 큐 (SQLite, DAG)
 - [[claude-assistant]] — 매니저 업무비서 시스템 (Notion 연동)
 - [[claude-assistant-guide]] — Claude 비서 시스템 매니저 가이드 (하루 3회 체크인, 프로덕트 연동)
@@ -23,6 +24,7 @@ updated: 2026-04-06
 - [[akaxa-space]] — 크로스AI 메모리 레이어
 - [[claudex]] — OpenClaude + Codex (GPT-5.4 백엔드)
 - [[tobe-mcp]] — ToBe Networks MCP 스킬 (60+개 도구)
+- [[tobe-mcp-dev-guide]] — ToBe MCP 개발자 가이드 (3계층 아키텍처, 도구 등록 패턴)
 - [[tobe-mcp-improvement]] — ToBe MCP 개선 프로젝트 (4Phase, 18Task)
 - [[tobe-ai]] — ToBe AI 시스템 (Text-to-SQL, 231테이블)
 - [[tbnws-admin]] — TBNWS Admin 통합 관리 플랫폼 (Spring Boot)
