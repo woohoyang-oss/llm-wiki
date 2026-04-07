@@ -4,6 +4,80 @@ title: Wiki Log
 
 # Log
 
+## [2026-04-07] feat | ERP 전 채널 매출 전환 + 신규 도구 2개
+
+### ERP 전환 (3개 도구)
+- `get_sales_overview` — naver_smartstore_orders → erp_customer_order_list (전 채널 통합)
+- `get_sales_by_brand` — 네이버 전용 → ERP 전 채널 (B2B 포함, 15개 브랜드)
+- `get_period_comparison` — ERP 전 채널 기반 기간 비교
+
+### 신규 도구 (2개)
+1. `get_sales_target_progress` — 매출 목표 달성률 (erp_customer_month_targert_sales vs erp_annual_sales)
+2. `get_product_cost_by_keyword` — 상품별 원가 검색 (키워드 → 매입가/USD/환율/마진율)
+
+### 서버
+- 74 tools, 13 guides로 확대
+
+---
+
+## [2026-04-07] feat | 비즈니스 질문 커버리지 확대 — 신규 도구 8개 + 가이드 3개
+
+### 신규 도구 (8개)
+1. `get_sales_by_brand` — 브랜드별 매출 집계 + 기여도
+2. `get_period_comparison` — 전주/전월/전분기 자동 비교
+3. `get_inventory_capital` — 전체 재고 자본 (브랜드별)
+4. `get_inventory_turnover` — 재고 회전율 (EXCELLENT~POOR)
+5. `get_product_lifecycle` — PLC 자동 분류 (LAUNCH/GROWTH/MATURE/DECLINE)
+6. `get_fx_sensitivity` — 환율 민감도 시뮬레이션
+7. `get_cannibalization_check` — 카니발라이제이션 감지
+8. `get_cs_workload_forecast` — CS 부하 예측 (12개월 추이)
+
+### 신규 가이드 (3개)
+- `/cash-health` — 현금 흐름 건강 점검
+- `/brand-scorecard` — 브랜드 성적표
+- `/period-review` — 기간 비교 리뷰
+
+### 서버
+- 72 tools, 13 guides로 확대
+
+## [2026-04-07] feat | 추세/체류 분석 신규 도구 2개 + inventory-health 가이드
+
+### 신규 도구
+1. `get_trend_movers` — 카탈로그 전체 판매 추세 급변 상품 (SURGE/DECLINE/INFLECTION), 노이즈 필터 내장 (min_quarterly)
+2. `get_stale_inventory` — 장기 체류 재고 (DEAD/DYING/SLOW 등급 + 묶인 자본 계산)
+
+### 신규 스킬 가이드
+- eywa-mcp/guides/inventory-health.md — 재고 건강 종합 점검 (추세+체류+발주+리스크 통합)
+
+### index.md 최적화
+- 질문→도구 빠른 매핑 테이블 추가 (재고/매출/CS/광고/복합 워크플로우)
+- 노이즈 필터 설명 추가
+
+### 배포
+- 서버 반영 완료: 64 tools, 10 guides
+
+## [2026-04-07] fix+feat | 발주(PO) 버그 수정 + 리스크 검출 신규 도구 2개
+
+### 버그 수정
+1. `purchase_orders()` 키워드 필터에 po_number/product_code 누락 → 추가 (MOZA 등 PO번호 검색 가능)
+2. PURCHASE_ORDERS 외 3개 SQL 기간 제한 180일 → 365일 확장 (장기 미입고 PO 누락 방지)
+
+### 신규 도구
+1. `get_po_brand_summary` — 브랜드별 발주 요약 (상태 집계 + 리스크 플래그)
+2. `get_po_risk_check` — 발주 리스크 자동 검출 (LONG_PENDING/STALE_DRAFT/PARTIAL_IMPORT/NO_DUE_DATE)
+
+### 신규 스킬 가이드
+- eywa-mcp/guides/pi-risk-check.md — PI 리스크 점검 워크플로우
+
+### 배포
+- 서버 반영 완료: 62 tools, 9 guides
+
+## [2026-04-07] ingest | Notion PI 업데이트 문서 인제스트
+- 소스: Notion "📋 PI 업데이트" (33bc0e218a4f815c8dacf098c2846870)
+- 생성: wiki/summaries/pi-update-overview.md
+- 내용: 7개 브랜드(Keychron, Aiper, ZOYO, LUMI, TrackRacer, MOZA, Playseat) PI/발주/입고 현황
+- index.md 갱신: Summaries 17개, 총 70페이지
+
 ## [2026-04-06] init | Wiki initialized
 - 비즈니스 위키 초기 구조 생성
 - 디렉토리: raw/, wiki/summaries/, wiki/entities/, wiki/concepts/
