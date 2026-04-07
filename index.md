@@ -99,6 +99,8 @@ updated: 2026-04-06
 - [[org/as/index]] — AS팀 문서 카탈로그
 - [[org/as/onboarding]] — AS팀 온보딩 가이드
 - [[org/as/faq]] — AS팀 FAQ
+- [[org/as/as-customer-faq]] — Keychron AS 고객 응대 FAQ (10개 트러블슈팅)
+- [[org/as/as-repair-manual]] — AS 내부 수리 매뉴얼 (Keychron/Aiper/GTGear)
 
 ### MD(상품기획)팀
 - [[org/md/index]] — MD팀 문서 카탈로그
