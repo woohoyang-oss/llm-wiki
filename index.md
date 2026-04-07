@@ -7,7 +7,7 @@ updated: 2026-04-06
 
 위키의 모든 페이지를 카탈로그합니다. 347개 소스에서 67개 위키 페이지 생성.
 
-## Entities (22)
+## Entities (23)
 
 프로젝트/시스템별 엔티티 페이지.
 
@@ -16,6 +16,7 @@ updated: 2026-04-06
 - [[eywa]] — Claude Team 오케스트레이션 플랫폼
 - [[eywa-queue]] — Eywa Queue 독립 태스크 큐 (SQLite, DAG)
 - [[claude-assistant]] — 매니저 업무비서 시스템 (Notion 연동)
+- [[claude-assistant-guide]] — Claude 비서 시스템 매니저 가이드 (하루 3회 체크인, 프로덕트 연동)
 - [[keychron-supply-tracker]] — 키크론 발주(PO) 추적 시스템
 - [[weekly-inventory]] — 주간 재고 리포트 자동화 (Excel→Gmail)
 - [[kychr-space]] — 키크론 마켓 인텔리전스 대시보드
