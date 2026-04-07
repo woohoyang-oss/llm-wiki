@@ -4,6 +4,22 @@ title: Wiki Log
 
 # Log
 
+## [2026-04-07] feat | get_daily_export 신규 도구 + trend_analysis 판매SKU 오판 수정
+
+### 신규 도구
+- `get_daily_export` — G-code 기반 일별 출고 추이 (GT/CJ 구분, TBNWS Admin 동일 데이터)
+
+### 버그 수정
+- `trend_analysis`: erp_stock_realtime.oneMonthSalesEa 갱신 지연 → 실출고 보조 데이터로 보완
+  - EX75-A1 (19개 판매중)이 "신규/미출시"로 오판되던 문제 해결
+  - REAL_MONTHLY_SALES_BY_KEYWORD 쿼리 추가, F→G code 정규화
+- eywa config: tobe_mcp_path를 서버 경로(/Users/tobe/)로 수정
+
+### 서버
+- 75 tools, 13 guides (ccbd383)
+
+---
+
 ## [2026-04-07] fix | eywa MCP 74개 도구 파이프라인 검증 완료
 
 ### 전체 검증 결과

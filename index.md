@@ -5,7 +5,7 @@ updated: 2026-04-07
 
 # Wiki Index
 
-위키의 모든 페이지를 카탈로그합니다. 348개 소스에서 70개 위키 페이지 생성. eywa 74 tools (68 verified, 6 EC2-only), 13 guides. product_cost_by_keyword 실거래가 매칭 완료.
+위키의 모든 페이지를 카탈로그합니다. 348개 소스에서 70개 위키 페이지 생성. eywa 75 tools (69 verified, 6 EC2-only), 13 guides.
 
 ## 질문 → 도구/가이드 빠른 매핑
 
