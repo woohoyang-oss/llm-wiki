@@ -29,7 +29,9 @@ updated: 2026-04-07
 | 브랜드별 매출 비중은? | `get_sales_by_brand` ★ERP 전 채널 |
 | 전주/전월 대비 변화? | `get_period_comparison(compare="week"/"month")` ★ERP |
 | 채널별 매출 비교? | `get_sales_by_channel` |
-| 특정 상품 일별 판매? | `get_product_daily_sales(product_no=...)` |
+| 특정 상품 일별 판매? (네이버) | `get_product_daily_sales(product_no=...)` |
+| 특정 SKU 일별 출고? (G-code) | `get_inventory_current(keyword=...)` → G-code 확인 → `get_daily_export(product_code=...)` |
+| 특정 상품 채널별 판매? | `get_channel_sales(keyword=...)` |
 | 스위치 선호도? | `get_switch_preference` |
 | 이번달 목표 달성률? | `get_sales_target_progress` |
 
@@ -42,6 +44,17 @@ updated: 2026-04-07
 | 재고 회전율 건강한가? | `get_inventory_turnover` |
 | 체류 재고 묶인 자본? | `get_stale_inventory` |
 | 특정 상품 원가는? | `get_product_cost_by_keyword(keyword=...)` |
+
+### 상품 조회/분석 질문
+| 질문 | 도구 |
+|------|------|
+| 특정 상품 재고 얼마야? | `get_inventory_current(keyword=...)` |
+| 특정 상품 원가/마진은? | `get_product_cost_by_keyword(keyword=...)` |
+| 특정 상품 실거래가? | `get_product_real_price(keyword=...)` |
+| 특정 상품 일별 출고 추이? | `get_inventory_current(keyword=...)` → G-code → `get_daily_export(product_code=...)` |
+| 특정 상품 발주 상태? | `get_purchase_orders(keyword=...)` |
+| 특정 상품 추세 예측? | `get_trend_analysis(keyword=...)` |
+| 특정 상품 발주 추천? | `get_trend_analysis(keyword=...)` → `get_order_recommendation(keyword=...)` |
 
 ### 상품 예측 질문
 | 질문 | 도구 |
